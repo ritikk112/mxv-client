@@ -3,7 +3,7 @@ import axios from "axios";
 import EntityCard from '../components/EntityCard';
 
 const HomePage = () => {
-  const baseURL = "http://localhost:3001/api/movie/recommend";
+  const baseURL = "https://mxv-1.onrender.com/api/movie/recommend";
   const [movies, setMovies] = React.useState(null);
   const [loading, setLoading] = React.useState(true);
   React.useEffect(() => {

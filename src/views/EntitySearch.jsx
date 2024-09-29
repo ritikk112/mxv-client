@@ -22,7 +22,7 @@ const EntitySearch = () => {
         // Perform search based on searchTerm and searchType
         // You can use axios to make the API request
         // For example:
-        axios.get(`http://localhost:3001/api/entity/search?query=${searchTerm}`)
+        axios.get(`https://mxv-1.onrender.com/api/entity/search?query=${searchTerm}`)
             .then((response) => {
                 console.log(response.data, searchTerm);
                 setEntityList(response.data);
